@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5FF"
+    android:backgroundTint="@color/grayinsiden"
     tools:context=".MainActivity">
 
     <!-- Header Greeting -->
@@ -16,7 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Selamat Pagi, Febrian"
         android:textSize="24sp"
-        android:textColor="#000000"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="08 Januari 2025"
         android:textSize="16sp"
-        android:textColor="#888888"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/tv_greeting"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,6 +53,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/roundedbg"
             android:padding="16dp">
 
             <TextView
@@ -154,8 +157,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Siap melayani pelanggan dengan setulus hati"
-        android:textSize="16sp"
-        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/card_estimation"
         app:layout_constraintStart_toStartOf="parent"
@@ -166,9 +169,10 @@
         android:id="@+id/tv_motivation_subtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="italic"
         android:text="Jangan Kecewakan Pelanggan"
-        android:textSize="14sp"
-        android:textColor="#888888"
+        android:textSize="17sp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/tv_motivation"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -194,12 +198,14 @@
             android:layout_height="120dp"
             android:orientation="vertical"
             android:gravity="center"
-            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/roundedbg"
             android:layout_margin="8dp">
 
             <ImageButton
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                ba
                 android:src="@drawable/ic_akun"
                 android:background="@color/white"
                 android:contentDescription="Gambar 1" />
@@ -220,6 +226,8 @@
             android:layout_height="120dp"
             android:orientation="vertical"
             android:gravity="center"
+            android:background="@drawable/roundedbg"
+            android:backgroundTint="@color/white"
             android:layout_margin="8dp">
 
             <ImageButton
@@ -242,8 +250,9 @@
             android:layout_width="100dp"
             android:layout_height="120dp"
             android:orientation="vertical"
+            android:background="@drawable/roundedbg"
+            android:backgroundTint="@color/white"
             android:gravity="center"
-            android:background="@drawable/rounded_bg"
             android:layout_margin="8dp">
 
             <ImageView
@@ -266,9 +275,9 @@
             android:layout_width="100dp"
             android:layout_height="120dp"
             android:orientation="vertical"
+            android:background="@drawable/roundedbg"
+            android:backgroundTint="@color/white"
             android:gravity="center"
-
-            android:background="@drawable/rounded_bg"
             android:layout_margin="8dp">
 
             <ImageView
@@ -291,8 +300,9 @@
             android:layout_width="100dp"
             android:layout_height="120dp"
             android:orientation="vertical"
+            android:background="@drawable/roundedbg"
+            android:backgroundTint="@color/white"
             android:gravity="center"
-            android:background="@drawable/rounded_bg"
             android:layout_margin="8dp">
 
             <ImageView
@@ -316,6 +326,8 @@
             android:layout_height="120dp"
             android:orientation="vertical"
             android:gravity="center"
+            android:background="@drawable/roundedbg"
+            android:backgroundTint="@color/white"
             android:layout_margin="8dp">
 
             <ImageView
