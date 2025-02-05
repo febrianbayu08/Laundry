@@ -3,4 +3,9 @@
     <string name="app_name">Laundry</string>
     <string name="idpelanggan">CUSTOMER ID</string>
     <string name="namapel">Customer Name</string>
+    <string name="alamat">Address</string>
+    <string name="nohp">Phone Number</string>
+    <string name="terda">Registered</string>
+    <string name="hub">Contact</string>
+    <string name="lihat">View</string>
 </resources>

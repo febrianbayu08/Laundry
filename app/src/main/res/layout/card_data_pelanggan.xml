@@ -42,7 +42,7 @@
                 android:id="@+id/tvCARD_PELANGGAN_alamat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Alamat"
+                android:text="@string/alamat"
                 android:textSize="14sp"
                 android:layout_marginBottom="2dp"/>
 
@@ -50,7 +50,7 @@
                 android:id="@+id/tvCARD_PELANGGAN_nohp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="No HP"
+                android:text="@string/nohp"
                 android:textSize="14sp"
                 android:layout_marginBottom="2dp"/>
 
@@ -76,7 +76,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     android:backgroundTint="#22D10B"
-                    android:text="Hubungi"
+                    android:text="@string/hub"
                     android:textColor="@android:color/white" />
 
                 <Button
@@ -84,7 +84,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Lihat"
+                    android:text="@string/lihat"
                     android:backgroundTint="@color/purplePrimary"
                     android:textColor="@android:color/white"/>
 

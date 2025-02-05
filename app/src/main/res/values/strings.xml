@@ -2,4 +2,9 @@
     <string name="app_name">Laundry</string>
     <string name="idpelanggan">ID Pelanggan</string>
     <string name="namapel">Nama Pelanggan</string>
+    <string name="alamat">Alamat</string>
+    <string name="nohp">No HP</string>
+    <string name="terda">Terdaftar</string>
+    <string name="hub">Hubungi</string>
+    <string name="lihat">Lihat</string>
 </resources>
