@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+             android:layout_width="match_parent"
     android:layout_marginTop="30dp"
     android:layout_marginStart="30dp"
+    android:background="@drawable/roundedbg"
     android:layout_marginEnd="30dp"
-    android:layout_height="match_parent">
+             android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/roundedbg"
         android:orientation="vertical">
 
         <TextView
@@ -16,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@color/sunday"
-            android:text="@string/idpelanggan"
+            android:text="@string/pegawai"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:gravity="center_vertical"
@@ -33,7 +35,7 @@
                 android:id="@+id/tvCARD_PELANGGAN_nama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/namapel"
+                android:text="@string/namapeg"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="4dp"/>
@@ -58,7 +60,7 @@
                 android:id="@+id/tvCARD_PELANGGAN_terdaftar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Terdaftar"
+                android:text="@string/terda"
                 android:textSize="14sp"
                 android:layout_marginBottom="8dp"/>
 
@@ -91,7 +93,6 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
 
 
 </androidx.cardview.widget.CardView>
