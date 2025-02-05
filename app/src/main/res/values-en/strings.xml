@@ -13,4 +13,5 @@
     <string name="terapkan">Apply</string>
     <string name="pegawai">Worker</string>
     <string name="namapeg">Worker Name</string>
+    <string name="tambahkanpeg">Add Worker</string>
 </resources>
