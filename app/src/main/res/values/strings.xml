@@ -13,4 +13,11 @@
     <string name="pegawai">Pegawai</string>
     <string name="namapeg">Nama Pegawai</string>
     <string name="tambahkanpeg">Tambahkan Pegawai</string>
+    <string name="cabang">Cabang</string>
+    <string name="sukses_simpan_pelanggan">Sukses Simpan Pelanggan</string>
+    <string name="validasi_nama_pelanggan">Validasi Nama Pelanggan</string>
+    <string name="validasi_alamat_pelanggan">Validasi Alamat Pelanggan</string>
+    <string name="validasi_noHP_pelanggan">Validasi No HP Pelanggan</string>
+    <string name="validasi_cabang">Validasi Cabang</string>
+
 </resources>

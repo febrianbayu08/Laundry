@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_datapelanggan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="20dp"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/sunday">
+
+            <TextView
+                android:id="@+id/tvid_pelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                android:text="@string/idpelanggan"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="15dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvnama_pelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="3dp"
+            android:text="@string/namapel"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvnohp_pelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="3dp"
+            android:text="@string/nohp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvalamat_pelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="3dp"
+            android:text="@string/alamat"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvterdaftar_pelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="3dp"
+            android:text="@string/terda"
+            android:textSize="14sp" />
+
+        <!-- ID telah disesuaikan dengan Adapter -->
+        <TextView
+            android:id="@+id/tvterdaftar_cabang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="3dp"
+            android:text="@string/cabang"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ly_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_lihat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#22D10B"
+                android:text="@string/terapkan"
+                android:textColor="@android:color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="3dp"/>
+
+            <Button
+                android:id="@+id/btn_hubungi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hub"
+                android:textColor="@android:color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

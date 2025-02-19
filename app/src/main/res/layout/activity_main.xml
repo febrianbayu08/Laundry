@@ -93,7 +93,8 @@
                     <ImageButton
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/ic_transaksi" />
+                        android:src="@drawable/ic_transaksi"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -106,6 +107,7 @@
 
                 <!-- Pelanggan Icon -->
                 <LinearLayout
+                    android:id="@+id/llpelanggan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -113,9 +115,11 @@
                     android:gravity="center">
 
                     <ImageButton
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/ic_pelanggan" />
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@id/llpelanggan"
+                        android:src="@drawable/ic_pelanggan"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -193,6 +197,7 @@
         android:gravity="center">
 
         <!-- Gambar 1 -->
+
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="120dp"
@@ -208,6 +213,8 @@
                 android:src="@drawable/ic_akun"
                 android:background="@color/white"
                 android:contentDescription="Gambar 1" />
+
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -271,6 +278,7 @@
 
         <!-- Gambar 4 -->
         <LinearLayout
+            android:id="@+id/llpegawai"
             android:layout_width="100dp"
             android:layout_height="120dp"
             android:orientation="vertical"

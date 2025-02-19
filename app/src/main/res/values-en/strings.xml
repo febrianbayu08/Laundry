@@ -14,4 +14,10 @@
     <string name="pegawai">Worker</string>
     <string name="namapeg">Worker Name</string>
     <string name="tambahkanpeg">Add Worker</string>
+    <string name="cabang">Branch</string>
+    <string name="sukses_simpan_pelanggan">Success Save Customers</string>
+    <string name="validasi_nama_pelanggan">Validate Customer Name</string>
+    <string name="validasi_alamat_pelanggan">Validate Customer Address</string>
+    <string name="validasi_noHP_pelanggan">Validate Customer Phone Number</string>
+    <string name="validasi_cabang">Branch Validation</string>
 </resources>
