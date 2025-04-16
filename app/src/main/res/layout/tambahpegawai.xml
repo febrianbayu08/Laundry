@@ -3,11 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:id="@+id/main"
     android:layout_height="match_parent">
 
     <!-- Judul -->
     <TextView
-        android:id="@+id/tvtambahkan_pelanggan"
+        android:id="@+id/tvtambahkan_pegawai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tambahkanpeg"
@@ -21,14 +22,14 @@
 
     <!-- Nama Lengkap -->
     <TextView
-        android:id="@+id/namalengkap"
+        android:id="@+id/namalengkappegawai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/namaleng"
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvtambahkan_pelanggan"
+        app:layout_constraintTop_toBottomOf="@id/tvtambahkan_pegawai"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"/>
 
@@ -40,13 +41,13 @@
         android:background="@drawable/roundedbg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/namalengkap"
+        app:layout_constraintTop_toBottomOf="@id/namalengkappegawai"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"/>
 
     <!-- Alamat -->
     <TextView
-        android:id="@+id/alamat"
+        android:id="@+id/alamatpegawai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/alamat"
@@ -65,13 +66,13 @@
         android:background="@drawable/roundedbg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/alamat"
+        app:layout_constraintTop_toBottomOf="@id/alamatpegawai"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"/>
 
     <!-- No HP -->
     <TextView
-        android:id="@+id/NoHp"
+        android:id="@+id/NoHppegawai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nohp"
@@ -90,13 +91,13 @@
         android:background="@drawable/roundedbg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/NoHp"
+        app:layout_constraintTop_toBottomOf="@id/NoHppegawai"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"/>
 
     <!-- Button Simpan -->
     <Button
-        android:id="@+id/btn_simpan"
+        android:id="@+id/btn_simpan_pegawai"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="@string/terapkan"

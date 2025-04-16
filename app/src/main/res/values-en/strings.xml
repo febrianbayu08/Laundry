@@ -20,4 +20,5 @@
     <string name="validasi_alamat_pelanggan">Validate Customer Address</string>
     <string name="validasi_noHP_pelanggan">Validate Customer Phone Number</string>
     <string name="validasi_cabang">Branch Validation</string>
+    <string name="tambah_pelanggan_gagal">tambah_pelanggan_gagal</string>
 </resources>

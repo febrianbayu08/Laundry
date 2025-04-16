@@ -6,6 +6,5 @@ data class ModelPelanggan(
     val alamat: String? = null,
     val noHP: String? = null,
     val cabang: String? = null,
-    val terdaftar: String? = null,
-    val timestamp: Long? = null // Tambahkan field timestamp
+    val terdaftar: Long? = null // Tambahkan ini
 )

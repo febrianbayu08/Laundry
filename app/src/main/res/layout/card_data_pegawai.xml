@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/card_datapegawai"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -28,10 +29,10 @@
 
             <!-- Header Card -->
             <TextView
-                android:id="@+id/tvCARD_PELANGGAN_ID"
+                android:id="@+id/tvCARD_PEGAWAI_ID"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@color/sunday"
+                android:background="#FFAB40"
                 android:text="@string/pegawai"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
@@ -47,7 +48,7 @@
 
                 <!-- Nama -->
                 <TextView
-                    android:id="@+id/tvCARD_PELANGGAN_nama"
+                    android:id="@+id/tvCARD_PEGAWAI_nama"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/namapeg"
@@ -57,7 +58,7 @@
 
                 <!-- Alamat -->
                 <TextView
-                    android:id="@+id/tvCARD_PELANGGAN_alamat"
+                    android:id="@+id/tvCARD_PEGAWAI_alamat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/alamat"
@@ -66,7 +67,7 @@
 
                 <!-- No HP -->
                 <TextView
-                    android:id="@+id/tvCARD_PELANGGAN_nohp"
+                    android:id="@+id/tvCARD_PEGAWAI_nohp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/nohp"
@@ -75,7 +76,7 @@
 
                 <!-- Terdaftar Sejak -->
                 <TextView
-                    android:id="@+id/tvCARD_PELANGGAN_terdaftar"
+                    android:id="@+id/tvCARD_PEGAWAI_terdaftar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/terda"

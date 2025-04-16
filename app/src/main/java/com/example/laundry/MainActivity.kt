@@ -11,7 +11,8 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import android.content.Intent
 import com.example.laundry.Pegawai.DataPegawai
-import com.example.laundry.pelanggan.DataPelanggan
+import com.example.laundry.Pelanggan.DataPelanggan
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

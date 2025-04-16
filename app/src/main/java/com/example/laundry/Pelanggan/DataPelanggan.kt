@@ -1,4 +1,4 @@
-package com.example.laundry.pelanggan
+package com.example.laundry.Pelanggan
 
 import android.content.Intent
 import android.os.Bundle
@@ -19,22 +19,20 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-// Penamaan kelas sebaiknya menggunakan PascalCase
-class DataPelanggan : AppCompatActivity() {
 
-    // Inisialisasi Firebase
+class DataPelanggan : AppCompatActivity() {
     private val database = FirebaseDatabase.getInstance()
     private val myRef = database.getReference("pelanggan")
 
     private lateinit var rvdatapelanggan: RecyclerView
-    private lateinit var fab_tambah_pelanggan: FloatingActionButton
+    private lateinit var fabTambahPelanggan: FloatingActionButton
+    private lateinit var adapter: AdapterDataPelanggan
     private var listPelanggan = arrayListOf<ModelPelanggan>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.data_pelanggan_activity)
 
-        // Enable edge-to-edge untuk tampilan modern
         enableEdgeToEdge()
 
         initViews()
@@ -42,7 +40,6 @@ class DataPelanggan : AppCompatActivity() {
         setupListeners()
         getData()
 
-        // Atur padding agar tidak terhalang oleh system bars
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.data_pelanggan)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -51,41 +48,38 @@ class DataPelanggan : AppCompatActivity() {
     }
 
     private fun initViews() {
-        rvdatapelanggan = findViewById(R.id.rvdatapelanggan)
-        fab_tambah_pelanggan = findViewById(R.id.fab_tambah_pelanggan)
+        rvdatapelanggan = findViewById(R.id.rvDATA_PELANGGAN)
+        fabTambahPelanggan = findViewById(R.id.fabDATA_PENGGUNA_Tambah)
     }
 
     private fun setupRecyclerView() {
-        val layoutManager = LinearLayoutManager(this)
-        layoutManager.reverseLayout = true
-        layoutManager.stackFromEnd = true
-        rvdatapelanggan.layoutManager = layoutManager
+        adapter = AdapterDataPelanggan(listPelanggan)
+        rvdatapelanggan.layoutManager = LinearLayoutManager(this).apply {
+            reverseLayout = true
+            stackFromEnd = true
+        }
         rvdatapelanggan.setHasFixedSize(true)
+        rvdatapelanggan.adapter = adapter
     }
 
     private fun setupListeners() {
-        fab_tambah_pelanggan.setOnClickListener {
-            // Pastikan kelas activity untuk tambah pelanggan sudah terdaftar di AndroidManifest.xml
-            val intent = Intent(this, TambahPelanggan::class.java)
-            startActivity(intent)
+        fabTambahPelanggan.setOnClickListener {
+            startActivity(Intent(this, TambahPelanggan::class.java))
         }
     }
 
     private fun getData() {
-        // Ambil data berdasarkan idPelanggan dan batasi 100 data terakhir
-        val query = myRef.orderByChild("idPelanggan").limitToLast(100)
+        val query = myRef.orderByChild("terdaftar").limitToLast(100) // Urutkan berdasarkan waktu pendaftaran
         query.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 listPelanggan.clear()
-                if (snapshot.exists()){
+                if (snapshot.exists()) {
                     for (dataSnapshot in snapshot.children) {
                         val pelanggan = dataSnapshot.getValue(ModelPelanggan::class.java)
                         pelanggan?.let { listPelanggan.add(it) }
                     }
-                    // Perbarui adapter RecyclerView
-                    val adapter = AdapterDataPelanggan(listPelanggan)
-                    rvdatapelanggan.adapter = adapter
-                    adapter.notifyDataSetChanged()
+                    listPelanggan.reverse() // Pastikan data terbaru muncul di atas
+                    adapter.notifyDataSetChanged() // Perbarui data tanpa membuat adapter baru
                 }
             }
 
